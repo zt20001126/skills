@@ -1,0 +1,163 @@
+{
+  "skill_id": "fashion_model_conversion",
+  "display_name": "AI 造型师：高转化模特图",
+  "type": "fashion_image_skill",
+  "version": "1.0.0",
+  "prompt_language": "en",
+  "description": "根据服装商品、平台、目标人群、场景、模特、姿势和转化重点，生成高转化服装模特图方案和英文图片 Prompt。",
+  "image_modes": [
+    "text_to_image",
+    "product_image_to_model",
+    "outfit_styling",
+    "campaign_model_image"
+  ],
+  "default_image_mode": "product_image_to_model",
+  "platforms": {
+    "taobao": {
+      "name": "淘宝",
+      "aspect_ratio": "3:4",
+      "style_note": "突出商品完整上身效果、清晰版型、可信电商质感。"
+    },
+    "douyin": {
+      "name": "抖音",
+      "aspect_ratio": "4:5",
+      "style_note": "画面直接、有吸引力，强调身材比例、卖点和投流点击率。"
+    },
+    "xiaohongshu": {
+      "name": "小红书",
+      "aspect_ratio": "3:4",
+      "style_note": "强调生活方式、真实穿搭感、自然氛围和种草感。"
+    },
+    "independent_site": {
+      "name": "独立站",
+      "aspect_ratio": "4:5",
+      "style_note": "偏国际化电商质感，画面干净，高级但不失商品信息。"
+    },
+    "instagram": {
+      "name": "Instagram",
+      "aspect_ratio": "4:5",
+      "style_note": "偏时尚大片和生活方式表达，重视视觉吸引力。"
+    },
+    "lookbook": {
+      "name": "Lookbook",
+      "aspect_ratio": "2:3",
+      "style_note": "强调品牌调性、整体搭配、姿态和系列感。"
+    }
+  },
+  "default_platform": "xiaohongshu",
+  "default_aspect_ratio": "3:4",
+  "model_types": [
+    "young female fashion model",
+    "young male fashion model",
+    "mature female fashion model",
+    "mature male fashion model",
+    "plus-size fashion model",
+    "Asian fashion model",
+    "European fashion model",
+    "diverse commercial fashion model"
+  ],
+  "default_model_type": "young female fashion model",
+  "poses": [
+    "natural standing pose",
+    "confident full-body pose",
+    "slight side pose to show garment silhouette",
+    "walking pose with natural fabric movement",
+    "hands relaxed, not covering garment details",
+    "one hand gently adjusting collar or sleeve",
+    "seated lifestyle pose with garment still visible"
+  ],
+  "default_pose": "confident full-body pose, hands relaxed, garment details clearly visible",
+  "scenes": [
+    "clean studio background",
+    "minimal white ecommerce set",
+    "soft daylight lifestyle room",
+    "modern city street",
+    "premium retail fitting room",
+    "neutral textured wall",
+    "vacation resort walkway",
+    "office commute scene"
+  ],
+  "default_scene": "clean studio background",
+  "visual_styles": [
+    "高转化电商主图",
+    "小红书种草图",
+    "抖音投流图",
+    "独立站高级商品图",
+    "自然生活方式",
+    "极简棚拍",
+    "轻奢通勤",
+    "度假穿搭",
+    "时尚 Lookbook"
+  ],
+  "default_visual_style": "高转化电商主图",
+  "conversion_focus": [
+    "清晰上身效果",
+    "显瘦比例",
+    "显高比例",
+    "高级质感",
+    "面料垂坠",
+    "版型挺括",
+    "颜色真实",
+    "腰线比例",
+    "领口细节",
+    "袖口细节",
+    "下摆动态",
+    "搭配完整度",
+    "购买可信度"
+  ],
+  "default_conversion_focus": [
+    "清晰上身效果",
+    "颜色真实",
+    "面料质感",
+    "购买可信度"
+  ],
+  "lighting": [
+    "soft commercial studio lighting",
+    "natural daylight",
+    "clean ecommerce lighting",
+    "premium editorial lighting",
+    "soft shadow contrast"
+  ],
+  "default_lighting": "soft commercial studio lighting with clean shadow contrast",
+  "composition": [
+    "full-body model image",
+    "garment centered and clearly visible",
+    "clean background with no distractions",
+    "model occupies most of the frame",
+    "space for ecommerce cropping",
+    "sharp fabric texture and realistic fit"
+  ],
+  "default_composition": "full-body model image, garment centered and clearly visible, clean background with no distractions",
+  "reference_image_note": "If a product reference image is provided, preserve the garment color, silhouette, fabric texture, pattern, length, neckline, sleeve shape, hemline, and key construction details. Do not invent logos, prints, or trims.",
+  "avoid": [
+    "blurry image",
+    "low resolution",
+    "bad anatomy",
+    "deformed hands",
+    "extra limbs",
+    "unrealistic body proportions",
+    "warped clothing",
+    "incorrect garment structure",
+    "fabric texture mismatch",
+    "wrong color",
+    "logo hallucination",
+    "watermark",
+    "messy background",
+    "overexposed highlights",
+    "garment details covered by hands",
+    "product not clearly visible",
+    "celebrity likeness",
+    "unauthorized real person",
+    "copyrighted character",
+    "brand logo unless authorized"
+  ],
+  "prompt_prefix": "Create a high-converting ecommerce fashion model image.",
+  "prompt_suffix": "The garment must remain the main subject, with realistic fit, clear silhouette, accurate fabric texture, natural model pose, clean commercial composition, professional lighting, no watermark, and no unauthorized logo.",
+  "output_fields": [
+    "styling_plan",
+    "composition_plan",
+    "positive_prompt",
+    "negative_prompt",
+    "warnings"
+  ]
+}
