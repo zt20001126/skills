@@ -1,0 +1,198 @@
+{
+  "skill_id": "seedance_video",
+  "display_name": "Seedance 视频创作",
+  "type": "video_prompt_skill",
+  "version": "1.1.0",
+  "target_model": "Seedance",
+  "prompt_language": "en",
+  "description": "根据主体、场景、平台、时长、风格、运镜和展示重点，生成适合 Seedance 的视频创作方案、参数建议和英文视频 Prompt。",
+  "generation_modes": [
+    "text_to_video",
+    "image_to_video",
+    "shot_list"
+  ],
+  "default_generation_mode": "text_to_video",
+  "video_types": [
+    "商品展示视频",
+    "服装商品展示",
+    "电商详情页视频",
+    "社媒短视频",
+    "品牌 Lookbook",
+    "图生视频",
+    "多镜头分镜视频",
+    "场景氛围视频"
+  ],
+  "platforms": {
+    "douyin": {
+      "name": "抖音",
+      "aspect_ratio": "9:16",
+      "recommended_duration": "6-12s",
+      "style_note": "节奏直接，前三秒突出主体和卖点。"
+    },
+    "xiaohongshu": {
+      "name": "小红书",
+      "aspect_ratio": "9:16",
+      "recommended_duration": "8-15s",
+      "style_note": "生活方式和质感并重，强调细节、真实感和氛围。"
+    },
+    "tiktok": {
+      "name": "TikTok",
+      "aspect_ratio": "9:16",
+      "recommended_duration": "6-12s",
+      "style_note": "节奏轻快，开头要有动作变化或视觉钩子。"
+    },
+    "instagram_reels": {
+      "name": "Instagram Reels",
+      "aspect_ratio": "9:16",
+      "recommended_duration": "6-15s",
+      "style_note": "强调镜头美感、生活方式和分享感。"
+    },
+    "ecommerce": {
+      "name": "电商详情页",
+      "aspect_ratio": "3:4",
+      "recommended_duration": "8-20s",
+      "style_note": "重点展示主体、材质、细节、使用方式和可信购买信息。"
+    },
+    "lookbook": {
+      "name": "品牌 Lookbook",
+      "aspect_ratio": "16:9",
+      "recommended_duration": "10-20s",
+      "style_note": "节奏克制，强调品牌调性、轮廓、质感和整体造型。"
+    }
+  },
+  "default_platform": "douyin",
+  "default_duration": "10s",
+  "default_aspect_ratio": "9:16",
+  "parameter_suggestions": {
+    "resolution": "1080p",
+    "fps": "24fps",
+    "motion_strength": "medium",
+    "camera_stability": "stable",
+    "note": "这些是产品层参数建议，真实 API 字段和枚举值需要以 Seedance 官方文档为准。"
+  },
+  "visual_styles": [
+    "高级时装大片",
+    "极简棚拍",
+    "都市街拍",
+    "自然生活方式",
+    "电商干净展示",
+    "秀场感",
+    "电影感",
+    "未来科技感",
+    "产品广告",
+    "赛博朋克城市"
+  ],
+  "default_visual_style": "高级质感广告",
+  "camera_movements": [
+    "slow push-in",
+    "slow pull-back",
+    "smooth tracking shot",
+    "gentle orbit around the subject",
+    "vertical tilt",
+    "close-up detail shot",
+    "wide establishing shot",
+    "slow motion turn",
+    "handheld documentary movement",
+    "aerial tracking shot",
+    "shallow depth of field",
+    "clean transition between detail and wide view"
+  ],
+  "default_camera_movement": "slow push-in, smooth tracking shot, close-up detail shot",
+  "subject_focus": [
+    "整体外观",
+    "材质质感",
+    "颜色表现",
+    "关键细节",
+    "使用场景",
+    "动态表现",
+    "比例和轮廓",
+    "高光卖点",
+    "真实可信展示"
+  ],
+  "default_subject_focus": [
+    "整体外观",
+    "材质质感",
+    "关键细节",
+    "动态表现"
+  ],
+  "garment_focus": [
+    "整体廓形",
+    "上身效果",
+    "面料垂坠",
+    "颜色质感",
+    "领口细节",
+    "袖口细节",
+    "腰线比例",
+    "下摆动态",
+    "走动时的面料运动",
+    "搭配完整度"
+  ],
+  "scene_options": [
+    "clean studio background",
+    "minimal white showroom",
+    "modern city street",
+    "soft daylight indoor space",
+    "fashion runway",
+    "premium retail space",
+    "neutral concrete set",
+    "cinematic city skyline",
+    "cozy cafe table",
+    "futuristic neon city"
+  ],
+  "default_scene": "clean studio background",
+  "actions": [
+    "subject remains centered while the camera slowly pushes in",
+    "model walks slowly toward camera",
+    "model turns to show the side profile",
+    "model gently adjusts the collar or sleeve",
+    "product rotates slightly to reveal surface details",
+    "camera moves from close-up detail to a wide hero view",
+    "aerial camera glides over the scene",
+    "soft transition from establishing shot to detail shot"
+  ],
+  "default_action": "subject remains centered while the camera slowly pushes in, then transitions to a clear detail view",
+  "lighting_options": [
+    "soft studio lighting",
+    "natural daylight",
+    "cinematic side lighting",
+    "clean ecommerce lighting",
+    "high-fashion runway lighting",
+    "soft shadow contrast",
+    "neon city lighting",
+    "warm cafe lighting"
+  ],
+  "default_lighting": "soft studio lighting with clean shadow contrast",
+  "image_to_video_note": "If a reference image is provided, preserve the main subject identity, color, material, shape, proportions, and key visual details from the reference image.",
+  "avoid": [
+    "blurry image",
+    "low resolution",
+    "bad anatomy",
+    "deformed hands",
+    "extra limbs",
+    "warped subject",
+    "warped clothing",
+    "flickering texture",
+    "unstable camera",
+    "overexposed highlights",
+    "messy background",
+    "visible logo unless requested and authorized",
+    "incorrect text",
+    "watermark",
+    "product not clearly visible",
+    "identity drift",
+    "inconsistent lighting",
+    "copyrighted character",
+    "unauthorized celebrity likeness",
+    "deepfake or misleading impersonation"
+  ],
+  "prompt_prefix": "Create a high-quality Seedance video.",
+  "prompt_suffix": "Keep the main subject clear and consistent throughout the video, with stable motion, realistic perspective, coherent lighting, professional composition, and no watermark.",
+  "output_fields": [
+    "creative_plan",
+    "shot_structure",
+    "parameters",
+    "positive_prompt",
+    "negative_prompt",
+    "warnings"
+  ]
+}
