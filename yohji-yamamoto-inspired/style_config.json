@@ -1,0 +1,134 @@
+{
+  "skill_id": "yohji-yamamoto-inspired",
+  "display_name": "Yohji Yamamoto Inspired",
+  "type": "fashion_image_style",
+  "version": "1.0.0",
+  "prompt_language": "en",
+  "designer_reference": {
+    "name": "Yohji Yamamoto",
+    "brand": "Yohji Yamamoto",
+    "usage_policy": "Use as high-level inspiration only. Do not request exact copying, direct replicas, logos, trademarks, or brand-identical garments."
+  },
+  "style_summary": "poetic Japanese avant-garde tailoring, black draped monochrome fashion, oversized fluid silhouettes, asymmetric deconstructed suiting, quiet melancholic runway mood",
+  "style_keywords": [
+    "Japanese avant-garde fashion",
+    "poetic tailoring",
+    "black monochrome",
+    "draped silhouette",
+    "oversized proportion",
+    "asymmetric balance",
+    "deconstructed suiting",
+    "melancholic runway",
+    "intellectual minimalism",
+    "fluid garment movement"
+  ],
+  "silhouette": [
+    "oversized",
+    "loose",
+    "draped",
+    "fluid",
+    "asymmetrical",
+    "elongated",
+    "layered",
+    "relaxed volume",
+    "body-skimming but not tight"
+  ],
+  "construction": [
+    "soft deconstructed tailoring",
+    "asymmetric lapels",
+    "dropped shoulders",
+    "wide-leg trousers",
+    "long flowing coats",
+    "layered shirting",
+    "raw or softened edges",
+    "wrapped panels",
+    "off-center closures",
+    "intentional negative space"
+  ],
+  "palette": [
+    "deep black",
+    "charcoal black",
+    "soft white",
+    "ash grey",
+    "muted navy"
+  ],
+  "materials": [
+    "matte wool gabardine",
+    "washed cotton",
+    "soft linen",
+    "fluid rayon",
+    "lightweight wool",
+    "silk crepe",
+    "textured black fabric",
+    "naturally draping cloth"
+  ],
+  "styling": [
+    "quiet conceptual runway styling",
+    "minimal makeup",
+    "unstyled natural hair",
+    "flat leather shoes or boots",
+    "layered black garments",
+    "no visible brand logos",
+    "reserved intellectual mood"
+  ],
+  "composition": [
+    "full-body fashion editorial",
+    "clean dark runway background",
+    "calm standing or walking pose",
+    "garment drape clearly visible",
+    "negative space around the silhouette",
+    "high-detail fabric movement"
+  ],
+  "lighting": [
+    "soft directional studio lighting",
+    "gentle shadow depth",
+    "low-key monochrome atmosphere",
+    "subtle runway illumination",
+    "quiet cinematic contrast"
+  ],
+  "quality": [
+    "high resolution",
+    "sharp garment detail",
+    "professional fashion photography",
+    "editorial runway image",
+    "natural fabric texture"
+  ],
+  "negative_prompt": [
+    "cute",
+    "sweet",
+    "pastel colors",
+    "neon colors",
+    "glossy glamour",
+    "tight bodycon fit",
+    "sportswear logo",
+    "streetwear logo",
+    "conventional business suit",
+    "fast fashion",
+    "overly decorative print",
+    "visible logo",
+    "brand text",
+    "trademark pattern",
+    "direct replica",
+    "low quality",
+    "blurry",
+    "bad anatomy",
+    "extra limbs"
+  ],
+  "prompt_fields": {
+    "user_input": "Raw user request, such as 'black oversized coat for menswear'.",
+    "style_summary": "Use style_summary from this config.",
+    "silhouette_phrase": "Join selected silhouette values into a natural English phrase.",
+    "construction_phrase": "Join selected construction values into a natural English phrase.",
+    "palette_phrase": "Join selected palette values into a natural English phrase.",
+    "material_phrase": "Join selected material values into a natural English phrase.",
+    "styling_phrase": "Join selected styling values into a natural English phrase.",
+    "composition_phrase": "Join selected composition values into a natural English phrase.",
+    "lighting_phrase": "Join selected lighting values into a natural English phrase.",
+    "quality_phrase": "Join selected quality values into a natural English phrase.",
+    "negative_prompt": "Join negative_prompt values with comma separators.",
+    "concept_summary": "One short sentence summarizing the generated garment concept.",
+    "positive_prompt": "Rendered positive prompt from prompt_template.md."
+  },
+  "default_positive_prompt": "{user_input}, poetic Japanese avant-garde tailoring, black draped monochrome fashion, oversized fluid silhouette, asymmetric deconstructed suiting, loose elongated layered proportion, deep black charcoal black soft white ash grey palette, matte wool gabardine washed cotton soft linen and naturally draping cloth, quiet conceptual runway styling, full-body fashion editorial, clean dark runway background, soft directional studio lighting, sharp garment detail, professional high-resolution fashion photography",
+  "default_negative_prompt": "cute, sweet, pastel colors, neon colors, glossy glamour, tight bodycon fit, sportswear logo, streetwear logo, conventional business suit, fast fashion, overly decorative print, visible logo, brand text, trademark pattern, direct replica, low quality, blurry, bad anatomy, extra limbs"
+}
