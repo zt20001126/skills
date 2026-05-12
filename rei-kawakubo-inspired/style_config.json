@@ -1,0 +1,117 @@
+{
+  "skill_id": "rei-kawakubo-inspired",
+  "display_name": "Rei Kawakubo Inspired",
+  "type": "fashion_image_style",
+  "version": "1.0.0",
+  "prompt_language": "en",
+  "designer_reference": {
+    "name": "Rei Kawakubo",
+    "brand": "Comme des Garcons",
+    "usage_policy": "Use as high-level inspiration only. Do not request exact copying, direct replicas, logos, trademarks, or brand-identical garments."
+  },
+  "style_summary": "avant-garde Japanese deconstruction, conceptual anti-fashion runway styling, sculptural distorted silhouettes, asymmetrical layered garment architecture",
+  "style_keywords": [
+    "avant-garde fashion",
+    "deconstruction",
+    "anti-fashion",
+    "conceptual runway",
+    "body distortion",
+    "radical silhouette",
+    "architectural garment",
+    "editorial high fashion"
+  ],
+  "silhouette": [
+    "asymmetrical",
+    "oversized",
+    "distorted",
+    "sculptural",
+    "layered",
+    "irregular",
+    "cocoon volume",
+    "off-axis proportion"
+  ],
+  "construction": [
+    "deconstructed seams",
+    "irregular cutting",
+    "layered panels",
+    "exaggerated volume",
+    "body-obscuring structure",
+    "unfinished edges",
+    "asymmetric closures"
+  ],
+  "palette": [
+    "black",
+    "white",
+    "charcoal grey",
+    "deep red accent"
+  ],
+  "materials": [
+    "structured wool",
+    "dense cotton",
+    "felt",
+    "matte technical fabric",
+    "layered fabric",
+    "crisp sculptural textile"
+  ],
+  "styling": [
+    "conceptual runway styling",
+    "minimal makeup",
+    "severe editorial mood",
+    "abstract silhouette focus",
+    "no visible brand logos"
+  ],
+  "composition": [
+    "full-body fashion editorial",
+    "clean runway background",
+    "centered model pose",
+    "garment silhouette clearly visible",
+    "high-detail fabric texture"
+  ],
+  "lighting": [
+    "controlled studio lighting",
+    "soft directional shadows",
+    "museum-grade fashion photography",
+    "high contrast monochrome mood"
+  ],
+  "quality": [
+    "high resolution",
+    "sharp garment detail",
+    "professional fashion photography",
+    "editorial runway image"
+  ],
+  "negative_prompt": [
+    "cute",
+    "sweet",
+    "pastel colors",
+    "basic slim fit",
+    "mainstream casualwear",
+    "traditional elegance",
+    "commercial fast fashion",
+    "bodycon dress",
+    "visible logo",
+    "brand text",
+    "trademark pattern",
+    "direct replica",
+    "low quality",
+    "blurry",
+    "bad anatomy",
+    "extra limbs"
+  ],
+  "prompt_fields": {
+    "user_input": "Raw user request, such as 'black sculptural coat for womenswear'.",
+    "style_summary": "Use style_summary from this config.",
+    "silhouette_phrase": "Join selected silhouette values into a natural English phrase.",
+    "construction_phrase": "Join selected construction values into a natural English phrase.",
+    "palette_phrase": "Join selected palette values into a natural English phrase.",
+    "material_phrase": "Join selected material values into a natural English phrase.",
+    "styling_phrase": "Join selected styling values into a natural English phrase.",
+    "composition_phrase": "Join selected composition values into a natural English phrase.",
+    "lighting_phrase": "Join selected lighting values into a natural English phrase.",
+    "quality_phrase": "Join selected quality values into a natural English phrase.",
+    "negative_prompt": "Join negative_prompt values with comma separators.",
+    "concept_summary": "One short sentence summarizing the generated garment concept.",
+    "positive_prompt": "Rendered positive prompt from prompt_template.md."
+  },
+  "default_positive_prompt": "{user_input}, avant-garde Japanese deconstruction, conceptual anti-fashion runway styling, sculptural distorted silhouette, asymmetrical layered garment architecture, oversized irregular body-obscuring volume, black white charcoal grey palette with deep red accent, structured wool and matte technical fabric, full-body fashion editorial, clean runway background, controlled studio lighting, sharp garment detail, professional high-resolution fashion photography",
+  "default_negative_prompt": "cute, sweet, pastel colors, basic slim fit, mainstream casualwear, traditional elegance, commercial fast fashion, bodycon dress, visible logo, brand text, trademark pattern, direct replica, low quality, blurry, bad anatomy, extra limbs"
+}
