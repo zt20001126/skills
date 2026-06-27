@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Fullstack Standard V1"
+  short_description: "Strong Java + Vue + AI engineering code generation rules"
+  default_prompt: "Use $ai-fullstack-standard-v1 to generate Java + Vue + AI project code under strict enterprise architecture, P3C, Chinese comments, layering, and validation rules."
