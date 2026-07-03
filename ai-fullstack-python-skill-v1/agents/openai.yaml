@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Fullstack Python V1"
+  short_description: "FastAPI/Vue/React/AI enterprise coding standard"
+  default_prompt: "Use $ai-fullstack-python-skill-v1 to implement the requested fullstack Python feature with enforced FastAPI, frontend, and AI module engineering rules."
