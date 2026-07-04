@@ -1,0 +1,4 @@
+interface:
+  display_name: "Auto QA"
+  short_description: "Generate executable tests and release-readiness QA reports."
+  default_prompt: "Use $auto-qa to generate executable unit, API, integration, boundary, negative, and idempotency tests plus a Markdown QA acceptance report for this code change."
