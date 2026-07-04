@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lean Engineering Agent"
+  short_description: "需求澄清、技术选型、精简PRD/TDD与TODO门禁"
+  default_prompt: "Use $lean-engineering-agent to turn a natural-language software requirement into clarified decisions, concise PRD/TDD, and executable TODOs."
