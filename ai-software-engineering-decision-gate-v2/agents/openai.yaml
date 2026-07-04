@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Software Engineering Decision Gate v2"
+  short_description: "Software requirement gate, architecture choices, and PRD/TDD/TODO generation"
+  default_prompt: "Use $ai-software-engineering-decision-gate-v2 to clarify a software requirement, present architecture choices, and generate confirmed PRD/TDD/TODO files."
