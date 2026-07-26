@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hookshot Backend Development"
+  short_description: "Enforce Hookshot architecture, security, and test conventions"
+  default_prompt: "Use $hookshot-backend-development to implement or review this Hookshot backend change according to the project conventions."
