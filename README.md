@@ -1,6 +1,10 @@
-# Skills
+# Codex Skills Library
 
-面向服装创作与软件工程的 AI Skills 集合。每个技能目录以 `SKILL.md` 为入口，并可包含参考文档、Prompt 模板、配置文件和脚本。
+**项目标识：** `codex-skills-library`
+
+**项目类型：** 可复用的 Codex / AI Agent Skills 集合
+
+本仓库集中维护面向服装创作、内容生产和软件工程的 skills。每个 skill 都是一个独立目录，以 `SKILL.md` 作为入口；需要时可附带模板、参考资料、脚本和配置。
 
 ## 技能目录
 
@@ -27,27 +31,44 @@
 
 ## 使用方式
 
-1. 打开对应目录中的 `SKILL.md`，确认技能的适用范围和工作流程。
-2. 在支持 Skills 的 AI 工具中启用该技能，然后用 `$技能目录名` 指定它；例如 `$seedance_video`。
-3. 按需查看该技能目录中的 `references/`、`prompt_template.md`、配置文件或 `scripts/`。这些文件为主技能提供补充资料和可复用资源。
+1. 打开对应目录中的 `SKILL.md`，确认 skill 的适用范围和工作流程。
+2. 在支持 skills 的 AI 工具中启用该 skill，并按工具约定调用；例如 `$seedance_video`。
+3. 按需查看同目录中的 `references/`、`prompt_template.md`、配置文件或 `scripts/`。
 
-具体触发条件、输入要求、输出格式和限制以各技能自己的 `SKILL.md` 为准。
+每个 skill 自行定义触发条件、输入要求、输出格式和边界；以它的 `SKILL.md` 为准。
 
-## 开发参考文档
+## 新增 Skill
 
-- [服装图片生成实现流程](SKILL_IMAGE_GENERATION_FLOW.md)：说明前后端如何根据用户选择的 Skill 组装 Prompt 并调用图片模型。
-- [Skill 系统开发文档](SKILL_SYSTEM_DEVELOPMENT_DOC.md)：介绍 Skill 的概念、存储方式及系统实现思路。
+1. 从 [`templates/skill-template/SKILL.md`](templates/skill-template/SKILL.md) 创建新目录，目录名使用唯一的小写 kebab-case，例如 `product-image-review`。
+2. 完成 `SKILL.md` 的 `name` 和 `description`，并按需新增 `references/`、`scripts/`、`agents/` 或配置文件。
+3. 在本 README 的合适分类中登记 skill 和用途。
+4. 本地运行 `python scripts/validate_skills.py`，确保元数据和目录索引有效。
+5. 提交前按 [`CONTRIBUTING.md`](CONTRIBUTING.md) 检查内容和资源。
+
+新增约定和审核清单见 [`CONTRIBUTING.md`](CONTRIBUTING.md)。仓库级 AI 协作规则见 [`AGENTS.md`](AGENTS.md)。
 
 ## 仓库结构
 
 ```text
-skills/
-├── <skill-name>/
-│   ├── SKILL.md
-│   ├── agents/       # 可选：工具集成元数据
-│   ├── references/   # 可选：补充规范与参考资料
-│   ├── scripts/      # 可选：辅助脚本
-│   └── ...           # 可选：Prompt 模板和配置
-├── README.md
-└── SKILL_*.md        # Skill 系统相关开发文档
+codex-skills-library/
+├── <skill-name>/                 # 一个 skill 一个目录，必须包含 SKILL.md
+│   ├── SKILL.md                  # skill 入口和核心规则
+│   ├── agents/                   # 可选：工具集成元数据
+│   ├── references/               # 可选：详细参考资料
+│   ├── scripts/                  # 可选：可复用辅助脚本
+│   └── ...                       # 可选：模板、配置和示例
+├── templates/skill-template/     # 新 skill 起始模板
+├── scripts/                      # 仓库维护工具
+├── .github/workflows/            # 自动元数据校验
+├── .gitignore                    # 本地缓存和生成文件忽略规则
+├── .gitattributes                # 统一文本文件换行格式
+├── AGENTS.md                     # 仓库级 AI 协作约定
+├── CONTRIBUTING.md               # 新增和维护约定
+├── SKILL_*.md                    # 图片生成和 Skill 系统实现参考文档
+└── README.md                     # 项目说明和 skill 索引
 ```
+
+## 开发参考文档
+
+- [服装图片生成实现流程](SKILL_IMAGE_GENERATION_FLOW.md)：说明前后端如何根据用户选择的 skill 组装 Prompt 并调用图片模型。
+- [Skill 系统开发文档](SKILL_SYSTEM_DEVELOPMENT_DOC.md)：介绍 skill 的概念、存储方式及系统实现思路。

@@ -1,0 +1,16 @@
+# Python bytecode and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local tooling output
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Operating system files
+.DS_Store
+Thumbs.db
