@@ -13,7 +13,7 @@ README = ROOT / "README.md"
 FRONTMATTER_DELIMITER = "---"
 KEBAB_CASE_NAME = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 LEGACY_NAMES = {"fashion_model_conversion", "seedance_video"}
-NON_SKILL_DIRECTORIES = {".git", ".github", ".idea", "scripts", "templates"}
+NON_SKILL_DIRECTORIES = {".agents", ".git", ".github", ".idea", "scripts", "templates"}
 README_SKILL_LINK = re.compile(r"\]\(([^)]+/SKILL\.md)\)")
 
 
@@ -102,7 +102,9 @@ def validate() -> list[str]:
         readme = README.read_text(encoding="utf-8")
         linked_paths = set(README_SKILL_LINK.findall(readme))
         linked_skill_paths = {
-            path for path in linked_paths if not path.startswith("templates/")
+            path
+            for path in linked_paths
+            if not path.startswith(("templates/", ".agents/skills/"))
         }
         expected_paths = {f"{skill.parent.name}/SKILL.md" for skill in skills}
         for missing in sorted(expected_paths - linked_skill_paths):

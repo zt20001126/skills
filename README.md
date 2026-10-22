@@ -4,7 +4,7 @@
 
 **项目类型：** 可复用的 Codex / AI Agent Skills 集合
 
-本仓库集中维护面向服装创作、内容生产和软件工程的 skills。每个 skill 都是一个独立目录，以 `SKILL.md` 作为入口；需要时可附带模板、参考资料、脚本和配置。
+本项目用于沉淀、组织与复用 Codex / AI Agent Skills，提供统一的目录规范、编写模板与质量校验，便于持续扩展和维护。
 
 ## 技能目录
 
@@ -24,6 +24,7 @@
 | [`ai-fullstack-python-skill-v1`](ai-fullstack-python-skill-v1/SKILL.md) | 为 FastAPI、SQLAlchemy、Pydantic、Vue/React 和 AI 模块提供分层开发规范。 |
 | [`ai-fullstack-standard-v1`](ai-fullstack-standard-v1/SKILL.md) | 为 Java Spring Boot、Vue 和 AI 模块提供分层开发规范及工程约束。 |
 | [`ai-software-engineering-decision-gate-v2`](ai-software-engineering-decision-gate-v2/SKILL.md) | 通过需求澄清和技术选型门禁，逐步形成 PRD、TDD 与 TODO。 |
+| [`requirement-clarifier`](requirement-clarifier/SKILL.md) | 结合相关项目上下文澄清软件需求，经用户确认后生成需求文档；不做技术设计或代码实现。 |
 | [`lean-engineering-agent`](lean-engineering-agent/SKILL.md) | 以精简的阶段流程完成需求确认、技术方案选择和工程交付物规划。 |
 | [`feature-implementation-planner`](feature-implementation-planner/SKILL.md) | 先澄清功能需求并核对代码库，再生成按日期命名、可审阅的分步实现方案文档。 |
 | [`auto-qa`](auto-qa/SKILL.md) | 根据代码或接口资料生成自动化测试、测试计划、测试用例和验收报告。 |
@@ -44,6 +45,8 @@
 3. 在本 README 的合适分类中登记 skill 和用途。
 4. 本地运行 `python scripts/validate_skills.py`，确保元数据和目录索引有效。
 5. 提交前按 [`CONTRIBUTING.md`](CONTRIBUTING.md) 检查内容和资源。
+
+本仓库中的可复用 Skill 保存在根目录。需要在 Codex 中按项目自动发现的 Skill，同时放在 `.agents/skills/`；当前项目版 `requirement-clarifier` 位于 [`.agents/skills/requirement-clarifier/SKILL.md`](.agents/skills/requirement-clarifier/SKILL.md)。
 
 新增约定和审核清单见 [`CONTRIBUTING.md`](CONTRIBUTING.md)。仓库级 AI 协作规则见 [`AGENTS.md`](AGENTS.md)。
 
