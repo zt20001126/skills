@@ -26,7 +26,7 @@
 | [`ai-software-engineering-decision-gate-v2`](ai-software-engineering-decision-gate-v2/SKILL.md) | 通过需求澄清和技术选型门禁，逐步形成 PRD、TDD 与 TODO。 |
 | [`requirement-clarifier`](requirement-clarifier/SKILL.md) | 结合相关项目上下文澄清软件需求，经用户确认后生成需求文档；不做技术设计或代码实现。 |
 | [`lean-engineering-agent`](lean-engineering-agent/SKILL.md) | 以精简的阶段流程完成需求确认、技术方案选择和工程交付物规划。 |
-| [`feature-implementation-planner`](feature-implementation-planner/SKILL.md) | 先澄清功能需求并核对代码库，再生成按日期命名、可审阅的分步实现方案文档。 |
+| [`feature-implementation-planner`](feature-implementation-planner/SKILL.md) | 先澄清需求并核对代码库，再生成分步实现方案；明确接口与数据库变更、复用判断和新增理由，减少冗余设计。 |
 | [`auto-qa`](auto-qa/SKILL.md) | 根据代码或接口资料生成自动化测试、测试计划、测试用例和验收报告。 |
 | [`hookshot-backend-development`](hookshot-backend-development/SKILL.md) | 按 Hookshot Backend 项目的规范开发、修复、重构和审查 Python 后端代码。 |
 

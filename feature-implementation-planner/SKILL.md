@@ -48,6 +48,9 @@ Produce a design that fits the repository rather than an abstract ideal architec
 - Assign each responsibility to an appropriate existing or new module. Keep responsibilities cohesive and dependencies directed through the project's established boundaries.
 - Prefer existing abstractions and patterns when they fit. Explain why a new module or layer is needed. Avoid both dumping logic into an unrelated file and adding needless layers for a small change.
 - Describe meaningful API, schema, persistence, UI, integration, and state changes only when the feature needs them.
+- Before proposing an API or database change, inspect the existing routes/contracts and persistence models/migrations relevant to the feature. Make reuse the default: identify whether an existing endpoint, table, or field can serve the requirement. For every proposed addition or modification, explain why reuse or a smaller change cannot satisfy it. Do not invent fields or tables merely to mirror a request, response, or workflow state.
+- Always make API and database impact explicit in the plan, even when there is none. List endpoints individually with method, path, action (add/modify/unchanged), contract changes, and compatibility impact. List tables and fields individually with action (add/modify/unchanged), purpose, and migration/backfill implications. If the repository evidence is incomplete, say what could not be verified; do not claim there is no impact based on missing evidence.
+- Apply a minimal-change check: each proposed endpoint, table, field, index, or persistence layer must map to a confirmed requirement and observable acceptance criterion. Remove proposals with no such mapping, and record any unresolved data/API decision as blocking before finalizing the plan.
 - Consider security and authorization, privacy, validation, failure handling, performance, observability, backward compatibility, migrations, rollout, and rollback when relevant. For irrelevant concerns, omit the section or state briefly why it does not apply.
 - Compare alternatives only when there is a real decision with material trade-offs. Record the recommendation and reason; do not invent technology choices when the project already establishes them.
 - Show the target structure for the affected area only. Clearly mark new files and changed files.
@@ -72,6 +75,7 @@ The document must include:
 - Relevant current code structure, with verified file references
 - Proposed architecture, module responsibilities, data/control flow, and design rationale
 - A complete change inventory: exact file path, new/modify action, responsibility, and reason
+- An explicit API impact inventory and database impact inventory, including an explicit “no change” result when applicable; each proposed change must be justified against the existing code and mapped to a confirmed requirement
 - A target tree showing the affected code structure after the proposed change
 - Ordered implementation steps; each step lists files, work, dependencies where applicable, and observable acceptance criteria
 - A verification strategy that maps acceptance criteria to appropriate checks or tests
